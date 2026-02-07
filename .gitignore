@@ -1,0 +1,15 @@
+# Copy and paste this entire block into PowerShell
+@"
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.DS_Store
+.vscode/
+.idea/
+models/
+Add-Content .gitignore "`n*.whl"
+Add-Content .gitignore "`nlinux_wheels/"
+"@ | Out-File -Encoding utf8 .gitignore
+linux_wheels/

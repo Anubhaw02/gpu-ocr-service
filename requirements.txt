@@ -1,0 +1,6 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.7
+# Matches Dockerfile
+marker-pdf==1.5.5
+surya-ocr==0.12.0
