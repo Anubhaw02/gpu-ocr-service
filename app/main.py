@@ -3,6 +3,12 @@ import logging
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
 from contextlib import asynccontextmanager
+from app.model_loader import load_surya_layout_model
+from app.model_loader import load_surya_layout_model
+
+# Load Surya model once at startup
+surya_model = load_surya_layout_model()
+
 
 # Import our custom modules
 from app.model_loader import load_model_to_memory, get_model
